@@ -79,7 +79,6 @@
       border-radius: 0.5rem;
       margin: 1rem;
 
-
       img {
         width: 100%;
         padding: 1rem;
@@ -108,8 +107,6 @@
       margin: 1rem;
       font-size: 0.9rem;
 
-
-
       &:first-child {
         border-top: 1px solid #ddd;
       }
@@ -117,8 +114,11 @@
       .code {
         font-family: monospace;
         font-size: 0.8rem;
-        background-color: #f1f3f5;
-        padding: 2px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        background-color: #e8e9ec;
+        padding: 4px;
         border-radius: 3px;
       }
 
@@ -143,4 +143,3 @@
     }
   }
 }
-
