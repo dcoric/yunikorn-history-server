@@ -16,9 +16,13 @@
  * limitations under the License.
  */
 
-export const environment = {
-  production: true,
-  externalLogsURL: '',
-  yunikornApiURL: '',
-  yhsApiURL: '',
-};
+export class DropdownItem {
+    name: string;
+    value: string;
+  
+    constructor(name: string, value: string) {
+      this.name = name;
+      this.value = value;
+    }
+  }
+  
