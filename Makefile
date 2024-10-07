@@ -61,7 +61,7 @@ GIT_TAG ?= $(shell git describe --tags --dirty --always)
 IMAGE_TAG ?= $(IMAGE_REPO):$(GIT_TAG)
 
 # WEB_ROOT defines path that will open web UI.
-WEB_ROOT ?= /web/
+WEB_ROOT ?= /
 
 # Go compiler selection
 GO := go

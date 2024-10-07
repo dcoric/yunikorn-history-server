@@ -40,7 +40,7 @@ export class EnvConfigService {
 
   getYuniKornWebAddress() {
     if (this.envConfig.yunikornApiURL) {
-      return this.envConfig.yunikornApiURL;
+      return `${this.envConfig.yunikornApiURL}/ws`;
     }
 
     return `${this.uiProtocol}//${this.uiHostname}:${this.uiPort}/ws`;
@@ -48,7 +48,7 @@ export class EnvConfigService {
 
   getYHSWebAddress() {
     if (this.envConfig.yhsApiURL) {
-      return this.envConfig.yhsApiURL;
+      return `${this.envConfig.yhsApiURL}/api`;
     }
 
     return `${this.uiProtocol}//${this.uiHostname}:${this.uiPort}/api`;
