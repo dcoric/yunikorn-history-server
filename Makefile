@@ -299,7 +299,9 @@ test-k6-performance: ## run k6 performance tests.
 
 .PHONY: web-build
 web-build: ng ## build the web components.
-	npm install --prefix web && yhsApiURL=http://127.0.0.1:8989 yunikornApiURL=$(strip $(call yunikorn_api_url)) npm run setenv --prefix web -- --base-href $(WEB_ROOT) npm run build --prefix web -- --base-href $(WEB_ROOT)
+	npm install --prefix web
+	yhsApiURL=http://127.0.0.1:8989 yunikornApiURL=$(strip $(call yunikorn_api_url)) npm run setenv --prefix web -- --base-href $(WEB_ROOT)
+	npm run build --prefix web -- --base-href $(WEB_ROOT)
 
 .PHONY: build
 build: bin/app ## build the yunikorn-history-server binary for current OS and architecture.
